@@ -210,8 +210,7 @@ main {
 
     #add-task-button {
         width: 8vw;
-        height: 8vw;
-        font-size: 4.5vw;
+        height: calc(8vw);
     }
 
     .delete-task-button,
