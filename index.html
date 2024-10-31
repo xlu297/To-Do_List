@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Tasks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Sidebar Menu -->
+    <div class="menu-icon">
+        <img src="menuIcon.png" alt="Menu Icon">
+    </div>
+    <nav class="sidebar-menu">
+        <ul>
+            <li><a href="index.html">All Tasks</a></li>
+            <li><a href="prioritized-tasks.html">Prioritized Tasks</a></li>
+            <li><a href="due-tasks.html">Due in 2 Days</a></li>
+            <li><a href="overdue-tasks.html">Overdue Tasks</a></li>
+        </ul>
+        <hr>
+        <ul id="category-list">
+            <!-- For the tasks under their categories -->
+        </ul>
+    </nav>
+
+    <!-- To-Do List Home Page -->
+    <main class="all-tasks">
+        <h1>To-Do List</h1>
+        <div class="add-task">
+            <button id="add-task-button">+</button> <!-- Button to add tasks -->
+        </div>
+        <div class="task-container">
+            <!-- For the list of all tasks -->
+            <div class="task">
+                <input type="checkbox" class="task-checkbox"> <!-- Mark completed tasks -->
+                <span class="task-title">Your Task</span> <!-- Content for the task -->
+                <button class="delete-task-button">Delete</button> <!-- For user to delete tasks -->
+                <button class="edit-task-button">Edit</button> <!-- For user to edit task contents -->
+                <button class="prioritize-task-button">Prioritize</button> <!-- For user to set prioritized tasks -->
+            </div>
+            <span class="task-due-date">Due: YYYY-MM-DD</span> <!-- Show the due date for each task -->
+        </div>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
