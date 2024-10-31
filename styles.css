@@ -135,6 +135,8 @@ main {
     align-items: center;
     justify-content: center;
     margin-left: auto;
+    box-sizing: border-box;
+    padding: 0;
 }
 
 .delete-task-button,
@@ -210,7 +212,8 @@ main {
 
     #add-task-button {
         width: 8vw;
-        height: calc(8vw);
+        height: 8vw;
+        font-size: 5vw;
     }
 
     .delete-task-button,
