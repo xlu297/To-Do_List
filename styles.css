@@ -7,6 +7,9 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column; /* Stack elements vertically for a more responsive layout */
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 h1 {
@@ -31,6 +34,11 @@ h2 {
     left: 25px;
     cursor: pointer;
     margin: 11px;
+}
+
+.menu-icon img {
+    width: 100%;
+    height: auto;
 }
 
 .sidebar-menu {
@@ -122,8 +130,11 @@ main {
     width: 40px;
     height: 40px;
     font-size: 1.8em;
-    text-align: center;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
 }
 
 .delete-task-button,
@@ -163,7 +174,19 @@ main {
 /* Responsive Design
 ---------------------------- */
 @media (max-width: 768px) {
+    h1 {
+        margin-left: 9vw;
+        margin-top: 0;
+    }
+
+    body {
+        font-size: 3vw;
+    }
+
     .menu-icon {
+        left: 10px;
+        top: 7px;
+        width: 9vw;
         margin-left: 0px;
         margin-right: 0px;
     }
@@ -173,23 +196,39 @@ main {
     }
 
     main {
-        margin: 0 30px;
-        margin-right: 10px;
+        margin: 0px;
     }
 
     .task-container {
         padding: 10px;
+        margin-left: 9vw;
+    }
+
+    .add-task {
+        margin-bottom: 2.5vw;
     }
 
     #add-task-button {
-        width: 35px;
-        height: 35px;
-        font-size: 1.3em;
+        width: 8vw;
+        height: 8vw;
+        font-size: 4.5vw;
     }
 
     .delete-task-button,
     .edit-task-button,
     .prioritize-task-button {
-        padding: 4px 8px;
+        padding: 1vw 2vw;
+        font-size: 2.5vw;
+        margin-left: 2.5vw;
+    }
+
+    .task-checkbox {
+        width: 3vw;
+        height: 3vw;
+        margin-right: 2vw;
+    }
+
+    .task-due-date {
+        margin-left: 1.5vw;
     }
 }
